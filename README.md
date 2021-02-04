@@ -42,6 +42,11 @@ Entonces podemos decir que el Perú es un país susceptible a diferentes desastr
 <img src="fuego.jpg" width="300" height="200" />
 
 
+<img src="erosion.jpg" width="300" height="300" />|<img src="inunda.jpg" width="300" height="200" />
+--<img src="fuego.jpg" width="300" height="200" />---- | -----------------
+
+
+
 
 ___
 ## 2.FINALIDAD
