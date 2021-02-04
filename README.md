@@ -37,7 +37,7 @@ Chiclayo, Trujillo, Chimbote, Lima, Ica. El 54,6% de la población peruana vive 
 
 Entonces podemos decir que el Perú es un país susceptible a diferentes desastres naturales propios de su geografía, tales como inundaciones, sismos y erosión de suelos los cuales  analizaremos  a continuación.
 
-<img src="erosion.jpg" width="300" height="200" />
+<img src="erosion.jpg" width="300" height="300" />
 <img src="inunda.jpg" width="300" height="200" />
 <img src="fuego.jpg" width="300" height="200" />
 
