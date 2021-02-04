@@ -1,12 +1,4 @@
----
-title: "ANÁLISIS DE INFLUENCIA DE INUNDACIONES, SISMOS Y EROSIÓN DE SUELOS EN POBLACIONES CAMPESINAS EN EL PERÚ"
-author: "Torres Meza, Lizbeth, Lázaro Sapallanay, Anderson"
-date: "3-02-2021"
-output:
-  html_document: default
-  pdf_document: default
-  word_document: default
----
+
 # ANÁLISIS DE LOS EFECTOS CAUSADOS POR  INUNDACIONES, SISMOS Y EROSIÓN DE SUELOS EN  POBLACIONES CAMPESINAS EN EL PERÚ
 ## Integrantes:
 - Arratia Parez, Eduardo
@@ -69,7 +61,7 @@ los desastres naturales influyen negativamente en las poblaciones campesinas
    - Cualitativa:Población de comunidades campesinas en el Perú.
    - Cuantitativa:Rango de erosión en el Perú.
    - Cualitativa:Regiones inundables en el Perú.
-   - kiritooooooooooo
+   - Cualitativa:Zonas de sismos
 
 ## 5. METODOLOGÍA
 - **Diseño a utilizar en el estudio** :
@@ -100,12 +92,7 @@ Selva alta |Actividad agropecuaria
 Sierra-Zona bajoandina|Actividad agropecuaria
 Sierra-Zona Mesoandina|Actividad agropecuaria
 
-
-
-mapaaaaaaaaa
-
-
-
+<img src="inundaciones.png" width="300" height="300" />
 
 Como se observa en el mapa la zona más afectadas por las inundaciones es la costa norte que comprende a las regiones de Tumbes, Piura, Lambayeque y La Libertad.Debido a  ello pueden causar daños a las tierras agrícolas, lo que daña los cultivos y el suministro de alimentos . Además el agua que no drena  puede atraer mosquitos y así transmitir enfermedades como el dengue, zika y chikungunya que en conjunto perjudican a las comunidades campesinas.
 
@@ -115,7 +102,6 @@ A nivel mundial, el Perú es uno de los países de mayor potencial sísmico debi
 
 En el gráfico se observa que a cada zona se asigna un factor Z según se indica en la Tabla. Este factor se interpreta como la aceleración máxima horizontal en suelo rígido con una probabilidad de 10 % de ser excedida en 50 años. El factor Z se expresa como una fracción de la aceleración de la gravedad.
 
-
 *Zona*   |  *Z*
 ------| -------------------
 4 | 0.45
@@ -123,64 +109,26 @@ En el gráfico se observa que a cada zona se asigna un factor Z según se indica
  2|  0.25
 1| 0.10
 
-
-
-
-
-
-mapaaaaaaaaa
- 
-
-
-
+<img src="sismos.png" width="300" height="300" />
 
 Como se ve en el gráfico, las zonas más propensas a sufrir sismos de gran magnitud es la region costa , lo que afectaría en gran medida a las comunidades campesinas que allí habitan, causando pérdidas humanas y  materiales. Por otro lado la segunda región más afectada por este evento es la sierra y el menos afectado es las selva teniendo una fracción de las aceleración de la gravedad de 0.10
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 - Erosión
 
 *Rango de erosión*| *Establece*
 ----------------- | -------------------
-0 - 0.01 | muy baja
-0.01 - 0.50 |baja
-0.50 - 1.0|medio
-1.0 - 10|alto
-10 - 50|muy alto
-50 - 100|
-100 - 150|
-150 - 200|
-200 - 250|
-> 250|
+10 - 50 |muy bajo
+50 - 100|bajo 
+100 - 150|medio
+150 - 200|alto
+200 - 250|muy alto
+> 250| extremo
 
-
-imagennnnn
-
-
-
+<img src="Rplot.png" width="300" height="300" />
 
 Como se observa en el gráfico, los suelos más erosivos se ubican mayormente en la región sierra y también en  ciertas partes de la costa ,  influyendo negativamente a las comunidades campesinas de ese lugar, causando  infertilidad de los suelos  y con ello la disminución de la productividad agrícola, la calidad medioambiental y sostenibilidad agrícola.
  No obstante, el Perú tiene la capacidad para destacar en el mercado de agricultura orgánica gracias a su ubicación geográfica y a su herencia agrícola. Por eso mismo, cuidar nuestras tierras es de vital importancia para poder continuar el desarrollo de la agricultura a nivel nacional y sostenerlo en el tiempo.
-
-
-
-
-
-
-
-
 
 ## 7. CONCLUSIONES y/o COMENTARIOS GENERALES
 
@@ -189,59 +137,3 @@ En conclusión el Perú es un país susceptible a diferentes desastres naturales
 
 El  análisis  realizado demuestra   que los diferentes desastres naturales producen una influencia negativa en las comunidades campesinas y así corroborando las hipótesis planteadas anteriormente.
 Es así que  en nuestro país estas comunidades sufren diferentes efectos de estos desastres, lo que los perjudica ocasionando perdida de cultivos, vivendas y por otro ladocontrayendo enfermedades causadas por vectores.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## codifo
-
-Encerramos el bloque de código con las tres tildes al revés ``` y le ponemos al lado el lenguaje que se está usando, ejemplo:
-
-```{r}
-erosion<- st_read("Erosion_Suelo_Hidrica_Pluvial_2014.shp")
-```
-
-## Insertar imagen
-![HARLEY](harley.png)
-### lizbeth torres
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
