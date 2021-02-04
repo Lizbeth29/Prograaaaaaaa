@@ -92,7 +92,7 @@ Selva alta |Actividad agropecuaria
 Sierra-Zona bajoandina|Actividad agropecuaria
 Sierra-Zona Mesoandina|Actividad agropecuaria
 
-<img src="inundaciones.png" width="600" height="600" />
+<img src="inundaciones.png" width="800" height="600" />
 
 Como se observa en el mapa la zona más afectadas por las inundaciones es la costa norte que comprende a las regiones de Tumbes, Piura, Lambayeque y La Libertad.Debido a  ello pueden causar daños a las tierras agrícolas, lo que daña los cultivos y el suministro de alimentos . Además el agua que no drena  puede atraer mosquitos y así transmitir enfermedades como el dengue, zika y chikungunya que en conjunto perjudican a las comunidades campesinas.
 
@@ -109,7 +109,7 @@ En el gráfico se observa que a cada zona se asigna un factor Z según se indica
  2|  0.25
 1| 0.10
 
-<img src="sismos.png" width="600" height="600" />
+<img src="sismos.png" width="800" height="600" />
 
 Como se ve en el gráfico, las zonas más propensas a sufrir sismos de gran magnitud es la region costa , lo que afectaría en gran medida a las comunidades campesinas que allí habitan, causando pérdidas humanas y  materiales. Por otro lado la segunda región más afectada por este evento es la sierra y el menos afectado es las selva teniendo una fracción de las aceleración de la gravedad de 0.10
 
@@ -126,7 +126,7 @@ Como se ve en el gráfico, las zonas más propensas a sufrir sismos de gran magn
 mayor a  250  |extremo
 
 
-<img src="Rplot.png" width="600" height="600" />
+<img src="Rplot.png" 800="600" height="600" />
 
 Como se observa en el gráfico, los suelos más erosivos se ubican mayormente en la región sierra y también en  ciertas partes de la costa ,  influyendo negativamente a las comunidades campesinas de ese lugar, causando  infertilidad de los suelos  y con ello la disminución de la productividad agrícola, la calidad medioambiental y sostenibilidad agrícola.
  No obstante, el Perú tiene la capacidad para destacar en el mercado de agricultura orgánica gracias a su ubicación geográfica y a su herencia agrícola. Por eso mismo, cuidar nuestras tierras es de vital importancia para poder continuar el desarrollo de la agricultura a nivel nacional y sostenerlo en el tiempo.
