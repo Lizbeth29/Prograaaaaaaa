@@ -123,7 +123,7 @@ Como se ve en el gráfico, las zonas más propensas a sufrir sismos de gran magn
 100 - 150|medio
 150 - 200|alto
 200 - 250|muy alto
-> 250  | extremo
+ > 250  |extremo
 
 
 <img src="Rplot.png" width="600" height="600" />
