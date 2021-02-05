@@ -12,7 +12,7 @@ ___
 
 ## 1.INTRODUCCIÓN
 El Perú se encuentra situado en la parte central y occidental de
-América del sur, con una extensión 1,285.216 km.Según el
+América del sur, con una extensión 1,285.216 km^2 .Según el
 último censo del año 2017 cuenta con 31,44  millones de
 habitantes. La población urbana equivale al 76% y la población
 rural al 24% del total.
