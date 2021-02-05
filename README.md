@@ -108,6 +108,7 @@ EROSION_SUELO <- st_read("Erosion_Suelo_Hidrica_Pluvial_2014.shp")
 ```
 
 
+
 - Inundaciones
 
 Las inundaciones son fenómenos naturales muy recurrentes en el Perú, y se generan cuando el agua ocupa un terreno que debería estar libre. La forma más recurrente de estimar inundaciones es a través de simulaciones hidráulicas; actualmente existen múltiples investigaciones que utilizan esta metodología por ser la mejor forma para entender la perspectiva física de áreas inundables. 
@@ -121,7 +122,7 @@ Sierra-Zona bajoandina|Actividad agropecuaria
 Sierra-Zona Mesoandina|Actividad agropecuaria
 
 
-```{r message = FALSE, warning = FALSE }
+ ``` r
 tm_shape(LIMITE_DEPARTAMENTAL) +
   tmap_options(inner.margins = c(0.01,0.01, 0.01,0.01)) +
   tm_fill("NOMBDEP", title = "REGIONES",
@@ -156,7 +157,7 @@ tm_shape(LIMITE_DEPARTAMENTAL) +
           palette = 'blue',
           style = 'cat') +
   tm_layout(bg.color = "white")
-```
+``` 
 
 
 <img src="inundaciones.jpeg" width="800" height="600" />
@@ -178,7 +179,7 @@ En el gráfico se observa que a cada zona se asigna un factor Z según se indica
 
 
 
-```{r message = FALSE, warning = FALSE}
+```r
 tm_shape(ZONA_SISMO) +
   tmap_options(inner.margins = c(0.01,0.01, 0.01,0.01)) +
   tm_fill("ZONA", title = "ZONAS SISMICAS",
@@ -228,7 +229,7 @@ Como se ve en el gráfico, las zonas más propensas a sufrir sismos de gran magn
 mayor a  250  |extremo
 
 
-```{r}
+```r
 tm_shape(EROSION_SUELO) +
   tmap_options(inner.margins = c(0.01,0.01, 0.01,0.01)) +
   tm_fill("RANGO", title = "RANGO",
