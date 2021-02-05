@@ -8,19 +8,7 @@
 
 ___
 
-```{r message=FALSE}
-library(tmap)     
-library(sf)        
-library(readr)       
-library(maps)        
-library(spData)      
-library(viridisLite) 
-library(viridis)     
-library(RColorBrewer)
-library(ggplot2)     
-library(sp)          
- 
-```
+
 
 ## 1.INTRODUCCIÓN
 El Perú se encuentra situado en la parte central y occidental de
@@ -93,6 +81,33 @@ Es un diseño basado en la recopilación, análisis y presentación de los datos
      - Repositorios.
 
 ## 6. DISCUSIÓN Y ANÁLISIS DE RESULTADOS REFERENTES AL OBJETIVO/HIPÓTESIS
+Construcción de mapas 
+   # Cargando librerías
+
+```{r message=FALSE}
+library(tmap)     
+library(sf)        
+library(readr)       
+library(maps)        
+library(spData)      
+library(viridisLite) 
+library(viridis)     
+library(RColorBrewer)
+library(ggplot2)     
+library(sp)          
+ 
+```
+# CARGAMOS LOS SHAPES QUE VAMOS A UTILIZAR
+
+```{r }
+RIOS_INUNDACION <- st_read("Areas inundables minam geogpsperu juansuyo.shp")
+COM_CAMPESINAS <- st_read("Comunidades Campesinas Minagri geogpsperu juansuyo.shp")
+LIMITE_DEPARTAMENTAL <- st_read("INEI_LIMITE_DEPARTAMENTAL_GEOGPSPERU_JUANSUYO_931381206.shp")
+ZONA_SISMO <- st_read("zona_sismica_vivienda_ds_003_2016_geogpsperu.shp")
+EROSION_SUELO <- st_read("Erosion_Suelo_Hidrica_Pluvial_2014.shp")
+```
+
+
 - Inundaciones
 
 Las inundaciones son fenómenos naturales muy recurrentes en el Perú, y se generan cuando el agua ocupa un terreno que debería estar libre. La forma más recurrente de estimar inundaciones es a través de simulaciones hidráulicas; actualmente existen múltiples investigaciones que utilizan esta metodología por ser la mejor forma para entender la perspectiva física de áreas inundables. 
@@ -104,6 +119,45 @@ Selva alta |Actividad agropecuaria
 Sierra-Zona altoandina|Actividad agropecuaria
 Sierra-Zona bajoandina|Actividad agropecuaria
 Sierra-Zona Mesoandina|Actividad agropecuaria
+
+
+```{r message = FALSE, warning = FALSE }
+tm_shape(LIMITE_DEPARTAMENTAL) +
+  tmap_options(inner.margins = c(0.01,0.01, 0.01,0.01)) +
+  tm_fill("NOMBDEP", title = "REGIONES",
+          palette = 'Greys',
+          style = 'cat') +
+  tm_layout(legend.bg.color = "black", 
+            legend.bg.alpha= 0.1, 
+            legend.frame=TRUE, 
+            legend.height = 0.05, 
+            legend.text.color = "black", 
+            legend.title.color = "black", legend.title.fontface = 4, legend.position = c(0.05,0.05), legend.outside = T, legend.outside.position = "right", legend.outside.size = 0.55) +
+  tm_layout(frame = T,
+            main.title = 'LAS COMUNIDADES AFECTADAS POR LAS INUNDACIONES DE LOS RIOS EN EL PERU',
+            main.title.size = 0.8,
+            fontface = 3,
+            fontfamily = 'serif',
+            main.title.position = c(0.02,0.5)) + 
+  tm_scale_bar(text.size = 0.35,
+               width = 0.25,
+               color.dark = 'White',
+               color.light = 'black',
+               position = c(0.4,0.05))+
+  tm_compass(position = c(0.02,0.85)) + 
+  tm_shape(COM_CAMPESINAS) +
+  tmap_options(inner.margins = c(0.01,0.01, 0.01,0.01)) +
+  tm_fill("nom_dpto", title = "COMUNIDADES CAMPESINAS",
+          palette = 'YlOrRd',
+          style = 'cat') +
+  tm_shape(RIOS_INUNDACION) +
+  tmap_options(inner.margins = c(0.01,0.01, 0.01,0.01)) +
+  tm_fill("REGIóN2", title = "INUNDACIONES DE LOS RIOS",
+          palette = 'blue',
+          style = 'cat') +
+  tm_layout(bg.color = "white")
+```
+
 
 <img src="inundaciones.jpeg" width="800" height="600" />
 
@@ -122,6 +176,41 @@ En el gráfico se observa que a cada zona se asigna un factor Z según se indica
  2|  0.25
 1| 0.10
 
+
+
+```{r message = FALSE, warning = FALSE}
+tm_shape(ZONA_SISMO) +
+  tmap_options(inner.margins = c(0.01,0.01, 0.01,0.01)) +
+  tm_fill("ZONA", title = "ZONAS SISMICAS",
+          palette = 'Blues',
+          style = 'cat') +
+  tm_layout(legend.bg.color = "black", 
+            legend.bg.alpha= 0.1, 
+            legend.frame=TRUE, 
+            legend.height = 0.05, 
+            legend.text.color = "black", 
+            legend.title.color = "black", legend.title.fontface = 4, legend.position = c(0.05,0.05), legend.outside = T, legend.outside.position = "right", legend.outside.size = 0.25) +
+  tm_layout(frame = T,
+            main.title = 'LA UBICACION DE LAS COMUNIDADES CAMPESINAS SEGUN SU ZONA SISMICA',
+            main.title.size = 0.75,
+            fontface = 3,
+            fontfamily = 'serif',
+            main.title.position = c(0.02,0.5)) + 
+  tm_scale_bar(text.size = 0.35,
+               width = 0.25,
+               color.dark = 'White',
+               color.light = 'black',
+               position = c(0.4,0.05))+
+  tm_compass(position = c(0.02,0.85)) +
+  tm_shape(COM_CAMPESINAS) +
+  tmap_options(inner.margins = c(0.01,0.01, 0.01,0.01)) +
+  tm_fill("nom_dpto", title = "COMUNIDADES CAMPESINAS",
+          palette = 'YlOrRd',
+          style = 'cat')+
+  tm_layout(bg.color = "white")
+```
+
+
 <img src="zonasismica.jpeg" width="800" height="600" />
 
 Como se ve en el gráfico, las zonas más propensas a sufrir sismos de gran magnitud es la región costa , lo que afectaría en gran medida a las comunidades campesinas que allí habitan, causando pérdidas humanas y  materiales. Por otro lado la segunda región más afectada por este evento es la sierra y el menos afectado es las selva teniendo una fracción de  aceleración de la gravedad de 0.10 .
@@ -137,6 +226,43 @@ Como se ve en el gráfico, las zonas más propensas a sufrir sismos de gran magn
 150 - 200|alto
 200 - 250|muy alto
 mayor a  250  |extremo
+
+
+```{r}
+tm_shape(EROSION_SUELO) +
+  tmap_options(inner.margins = c(0.01,0.01, 0.01,0.01)) +
+  tm_fill("RANGO", title = "RANGO",
+          palette = 'YlOrRd',
+          style = 'cat') +
+  tm_layout(legend.bg.color = "black", 
+            legend.bg.alpha= 0.1, 
+            legend.frame=TRUE, 
+            legend.height = 0.05, 
+            legend.text.color = "black", 
+            legend.title.color = "black", legend.title.fontface = 4, legend.position = c(0.05, 0.05), legend.outside = T, legend.outside.position = "right", legend.outside.size = 0.55) +
+  tm_layout(frame = T,
+            main.title = 'LAS COMUNIDADES CAMPESINAS AFECTADAS POR LA EROSION DE SUELOS EN EL PERU',
+            main.title.size = 1,
+            fontface = 3,
+            fontfamily = 'serif',
+            main.title.position = c(0.02,0.5)) + 
+  tm_scale_bar(text.size = 0.35,
+               width = 0.25,
+               color.dark = 'White',
+               color.light = 'black',
+               position = c(0.2,0.05))+
+  tm_compass(position = c(0.02,0.85))+
+  tm_shape(COM_CAMPESINAS) +
+  tmap_options(inner.margins = c(0.01,0.01, 0.01,0.01)) +
+  tm_fill("nom_dpto", title = "COMUNIDADES CAMPESINAS",
+          palette = 'Blues',
+          style = 'cat')
+
+
+```
+
+
+
 
 <img src="Rplot.png" width="800" height="600" />
 
