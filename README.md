@@ -8,6 +8,20 @@
 
 ___
 
+```{r message=FALSE}
+library(tmap)     
+library(sf)        
+library(readr)       
+library(maps)        
+library(spData)      
+library(viridisLite) 
+library(viridis)     
+library(RColorBrewer)
+library(ggplot2)     
+library(sp)          
+ 
+```
+
 ## 1.INTRODUCCIÓN
 El Perú se encuentra situado en la parte central y occidental de
 América del sur, con una extensión 1,285.216 km.Según el
