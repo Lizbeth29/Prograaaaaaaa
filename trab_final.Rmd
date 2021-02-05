@@ -4,7 +4,7 @@ title: Cómo analizar la influencia de inundaciones, sismos y erosion de suelos 
 author: Torres Meza Lizbeth, Lazaro Sapallanay, Anderson Eduardo Arratia Parez & Medina
   Enriquez Juan.
 date: "3/2/2021"
-output: github_document
+output: html_document
 ---
 **CARGANDO LIBRERÍAS**
 
@@ -17,13 +17,12 @@ library(spData)
 library(viridisLite) 
 library(viridis)     
 library(RColorBrewer)
-library(ggplot2)     
 library(sp)          
  
 ```
 
 **CARGAMOS LOS SHAPES QUE VAMOS A UTILIZAR**
-setwd(""C:/Users/Asus/Desktop/gittttthubbbb")
+
 ```{r }
 RIOS_INUNDACION <- st_read("Areas inundables minam geogpsperu juansuyo.shp")
 COM_CAMPESINAS <- st_read("Comunidades Campesinas Minagri geogpsperu juansuyo.shp")
@@ -145,5 +144,4 @@ tm_shape(EROSION_SUELO) +
 
 
 ```
-
 
