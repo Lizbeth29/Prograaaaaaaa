@@ -82,7 +82,7 @@ Es un diseño basado en la recopilación, análisis y presentación de los datos
 
 ## 6. DISCUSIÓN Y ANÁLISIS DE RESULTADOS REFERENTES AL OBJETIVO/HIPÓTESIS
 Construcción de mapas 
-   # Cargando librerías
+   - Cargando librerías
 
 ```{r message=FALSE}
 library(tmap)     
@@ -97,7 +97,7 @@ library(ggplot2)
 library(sp)          
  
 ```
-# CARGAMOS LOS SHAPES QUE VAMOS A UTILIZAR
+-  CARGAMOS LOS SHAPES QUE VAMOS A UTILIZAR
 
 ```{r }
 RIOS_INUNDACION <- st_read("Areas inundables minam geogpsperu juansuyo.shp")
