@@ -84,7 +84,7 @@ Es un diseño basado en la recopilación, análisis y presentación de los datos
 Construcción de mapas 
    - Cargando librerías
 
-```r
+```r 
 library(tmap)     
 library(sf)        
 library(readr)       
