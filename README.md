@@ -84,7 +84,7 @@ Es un diseño basado en la recopilación, análisis y presentación de los datos
 Construcción de mapas 
    - Cargando librerías
 
-```{r message=FALSE}
+```r
 library(tmap)     
 library(sf)        
 library(readr)       
@@ -99,7 +99,7 @@ library(sp)
 ```
 -  CARGAMOS LOS SHAPES QUE VAMOS A UTILIZAR
 
-```{r }
+```r
 RIOS_INUNDACION <- st_read("Areas inundables minam geogpsperu juansuyo.shp")
 COM_CAMPESINAS <- st_read("Comunidades Campesinas Minagri geogpsperu juansuyo.shp")
 LIMITE_DEPARTAMENTAL <- st_read("INEI_LIMITE_DEPARTAMENTAL_GEOGPSPERU_JUANSUYO_931381206.shp")
