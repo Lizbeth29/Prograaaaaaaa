@@ -91,7 +91,7 @@ Sierra-Zona altoandina|Actividad agropecuaria
 Sierra-Zona bajoandina|Actividad agropecuaria
 Sierra-Zona Mesoandina|Actividad agropecuaria
 
-<img src="inundaciones.png" width="800" height="600" />
+<img src="inundaciones.jpeg" width="800" height="600" />
 
 Como se observa en el mapa las zonas más afectadas por las inundaciones corresponden a  la costa norte que comprende a las regiones de Tumbes, Piura, Lambayeque y La Libertad.Debido a  ello pueden causar daños a las tierras agrícolas, lo que daña los cultivos y el suministro de alimentos . Además el agua que no drena  puede atraer mosquitos y así transmitir enfermedades como el dengue, zika y chikungunya que en conjunto perjudican a las comunidades campesinas.
 
@@ -108,7 +108,7 @@ En el gráfico se observa que a cada zona se asigna un factor Z según se indica
  2|  0.25
 1| 0.10
 
-<img src="zonasismica.jpeg.png" width="800" height="600" />
+<img src="zonasismica.jpeg" width="800" height="600" />
 
 Como se ve en el gráfico, las zonas más propensas a sufrir sismos de gran magnitud es la región costa , lo que afectaría en gran medida a las comunidades campesinas que allí habitan, causando pérdidas humanas y  materiales. Por otro lado la segunda región más afectada por este evento es la sierra y el menos afectado es las selva teniendo una fracción de  aceleración de la gravedad de 0.10 .
 
